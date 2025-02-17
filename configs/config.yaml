@@ -1,0 +1,15 @@
+model:
+  bert_model_name: 'bert-base-uncased'
+  max_length: 256
+  num_labels: 134          # 根据您的数据集修改
+  label_embedding_dim: 128 # 标签嵌入维度
+
+training:
+  batch_size: 16
+  learning_rate: 0.0002
+  num_epochs: 1
+  temperature: 0.5
+
+data:
+  train_dir: 'D:/Project/tectClass/data/WOS5736'
+  eval_dir: 'D:/Project/tectClass/data/WOS11967'
